@@ -22,7 +22,7 @@ export default class BestSellers extends React.Component<BestSellersProps, BestS
     };
   }
 
-  async componentDidMount() {
+  sync componentDidMount() {
     try {
       const books = [];
       const bestSellers = await API.get("bestsellers", "/bestsellers", null);
